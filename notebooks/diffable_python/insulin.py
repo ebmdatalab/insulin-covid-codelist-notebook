@@ -42,6 +42,3 @@ arb_codelist = bq.cached_read(sql, csv_path=os.path.join('..','data','arb_codeli
 pd.set_option('display.max_rows', None)
 pd.set_option('display.width', None)
 arb_codelist
-# -
-
-
