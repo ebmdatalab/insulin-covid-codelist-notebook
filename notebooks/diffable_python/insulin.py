@@ -23,7 +23,7 @@ import pandas as pd
 # +
 sql = '''WITH bnf_codes AS (
   SELECT bnf_code FROM hscic.presentation WHERE 
-bnf_code LIKE '0601012%'  #BNF section insulins
+bnf_code LIKE '060101%'  #BNF section insulins
 )
 
 SELECT "vmp" AS type, id, bnf_code, nm
@@ -42,6 +42,6 @@ insulin_codelist = bq.cached_read(sql, csv_path=os.path.join('..','data','insuli
 pd.set_option('display.max_rows', None)
 pd.set_option('display.width', None)
 insulin_codelist
-# -
+# +
 
 
